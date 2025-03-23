@@ -9,5 +9,6 @@ create({
   apiHost: '0.0.0.0', // necesario para que Render lo detecte
   apiPort: parseInt(process.env.PORT || '3000'), // Render asigna este puerto
   apiKey: process.env.API_KEY, // no expone la clave en código
-  headless: true
+  headless: true,
+  useChrome: false
 });
