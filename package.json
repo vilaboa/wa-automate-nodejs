@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "rm -rf dist/ && tsc && npm run build:lib && npm run build:config-for-bin",
+    "start": "npm run build && node dist/index.js",
     "build:skipmid": "tsc && npm run build:lib",
     "build:lib": "ts-node prebuild.ts",
     "docs": "npm run --prefix docs deploy_with_ssh_ci",
